@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: black;
+    height: 550px;
+    width: 550px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "welcome"
+        "email"
+        "password"
+        "sign-in"
+        "both";
+    ;
+}
+
+/*to make it glassy look*/
+.glass {
+    background-color: transparent;
+    backdrop-filter: blur(60px);
+    background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.173), rgba(0, 0, 0, 0.173));
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.173);
+}
